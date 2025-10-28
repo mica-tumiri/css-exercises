@@ -31,6 +31,7 @@ input {
 
 /*solucion*/
 body {
+  min-height: 100vh;
   display: flex; 
   /* aplica el display flex al body para que los elementos hijos se distribuyan en una columna, el header, content and footer,por defecto el valor es display: block*/
   flex-direction: column;
@@ -50,7 +51,6 @@ body {
 }
 li {
   list-style: none;
-
 }
 a {
   text-decoration: none;
@@ -58,6 +58,7 @@ a {
 
 }
 .content {
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,8 +73,6 @@ a {
   align-items: flex-end;
   background-color: #ddd;
   padding: 5px;
-
-
 
 }
 
