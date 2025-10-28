@@ -5,7 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
 }
+
 
 img {
   width: 600px;
@@ -23,4 +25,58 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+
+
+/*solucion*/
+body {
+  display: flex; 
+  /* aplica el display flex al body para que los elementos hijos se distribuyan en una columna, el header, content and footer,por defecto el valor es display: block*/
+  flex-direction: column;
+
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  align-items: center;
+}
+.left-links, .right-links {
+  display: flex;
+  gap: 16px; 
+  padding: 0;
+  margin: 16px;
+}
+li {
+  list-style: none;
+
+}
+a {
+  text-decoration: none;
+  color: rgb(136, 132, 132);
+
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin: auto;}
+
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #ddd;
+  padding: 5px;
+
+
+
+}
+
+button {
+  padding: 6px;
 }
